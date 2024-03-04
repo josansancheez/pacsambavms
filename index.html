@@ -1,0 +1,154 @@
+<!--Decidi hacerlo todo en un mismo archivo para no tener lio en los archivos y así tenerlo más ordenado. Además los how-to, por lo general, son de una misma página-->
+<!DOCTYPE html>
+<html lang="es"><!--Establecemos el idioma del documento-->
+<head><!--Aqui introducimos los metadatos-->
+  <meta charset="UTF-8">
+  <title>How-To José Antonio Sánchez</title><!--Este es el titulo de la web, se puede ver en el nombre de la pestaña-->
+  <link rel="stylesheet" href="style.css"><!--Aqui está el archivo css para los estilos-->
+  <link rel="icon" type="image/ico" href="img/favicon.ico"/><!--Este es el icono de la pagina, que es el de ChatGPT-->
+
+  <!--José Antonio Sánchez 1ºDAW-->
+</head>
+<body><!--Aqui ponemos el cuerpo del documento, es decir, lo que se ve en el nombre de la pestaña -->
+  <header>
+    <h1>Mi primer How-To</h1> <!--Este es el titulo que esta con el marco en negro en la web-->
+  </header>
+  <main>
+    <section class="sidebar">
+      <h2>Contenido</h2> <!--Aqui lo tenemos en el lateral de la página, es como si fuese el indice-->
+      <ul><!--listamos el indice usando este codigo-->
+        <li><a href="#1paso">1º Paso: Descarga de programas</a></li><!--Ponemos la direccion de cada linea de codigo para que en el navegador le pulses y te lleva al sitio-->
+        <li><a href="#2paso">2º Paso: Instalación y configuración del programa</a></li>
+        <li><a href="#3paso">3º Paso: Instalación y configuración de Windows</a></li>
+        <li><a href="#4paso">4º Paso: Instalación y configuración de Ubuntu</a></li>
+        <li><a href="#5paso">5ºPaso: Configuración de la Red NAT</a></li>
+        <li><a href="#6paso">6º Paso: Instalación de SAMBA</a></li>
+      </ul>
+    </section>
+    <section class="content">
+      <p>Bienvenidos a este How-To hecho por José Antonio Sánchez Pérez, alumno de 1º de DAW en Albor Croft.</p><!--El <p> sirve para hacer parrafos, lo veremos durante el archivo html-->
+      <p>En este tutorial, os voy a explicar como hacer la instalacion de maquinas virtuales con windows y ubuntu, que se conecten entre sí y poder hacer una transferencia de archivos.</p>
+      <br>
+      
+      <h2 id="1paso">1º Paso: Descarga de programas</h2><!--Aqui hacemos los titulos durante todo el html y con el id establecemos el destino cuando le das al indice-->
+      <p>Para empezar, vamos a descargar los siguientes softwares que te lo dejo aquí abajo para hacer un uso correcto del mismo.</p>
+      <div class="contenedordecards"><!--Aquí hacemos los cards para la presentacion de cada software-->
+        <div class="card">
+          <figure>
+            <img src="img/windows.png" alt="windows"/><!--Aqui añadimos la imagen-->     
+          </figure>
+          <div class="contenido">
+            <h3>Windows</h3><!--El titulo de cada card-->
+            <p>SO propiedad de Microsoft, es el más usado en el mundo.</p><!--La descripción-->
+            <a href="https://www.microsoft.com/es-es/software-download/windows10%20" target="_blank">Descarga Aquí</a><!--El enlace hacia la descarga del mismo software-->
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="img/ubuntu.png" alt="ubuntu"/>      
+          </figure>
+          <div class="contenido">
+            <h3>Ubuntu</h3>
+            <p>SO propiedad de Canonical, de uso Libre. De Linux, es el más usado.</p>
+            <a href="https://ubuntu.com/download/desktop" target="_blank">Descarga Aquí</a>
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="img/virtualbox.png" alt="virtualbox"/>      
+          </figure>
+          <div class="contenido">
+            <h3>VirtualBox</h3>
+            <p>Software propiedad de Oracle, es Gratis y facil de usar.</p>
+            <a href="https://www.virtualbox.org/" target="_blank">Descarga Aquí</a>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <p>Para poder usar este programa, tenemos que descargar un <a href="https://es.wikipedia.org/wiki/Sistema_operativo" target="_blank">sistema operativo</a><!--Aqui meto un enlace de referencia para que el usuario vea lo que es-->. Para ello nos descargaremos una <a href="https://es.wikipedia.org/wiki/Imagen_ISO" target="_blank">ISO</a> de Windows 10 y de Ubuntu 22.04.4, que es el que te facilito aquí arriba.</p>
+      <p>Empezamos con el Windows 10, que será un proceso sencillo, donde tenemos que descargar un asistente a través de la <a href="https://www.microsoft.com/es-es/software-download/windows10%20" target="_blank">pagina oficial de microsoft</a>. Luego le damos a <em>Descarga ahora la herramienta</em> y se descarga la herramienta en el ordenador. Luego lo ejecutas y seguimos los pasos:
+        <ol>
+          <li>Aceptar los terminos y condiciones</li>
+          <li>Seleccionar crear medio de instalación</li>
+          <li>Seleccionamos la arquitectura del equipo, idioma y región</li>
+          <li>Descargar en archivo ISO</li>
+          <li>Seleccionamos la ubicación donde se descargará</li>
+          <li>Esperar (depende de la velocidad del ordenador y del internet puede variar)</li>
+        </ol></p>
+        <p>Una vez instalado, cerramos el asistente y vamos al siguiente paso, que sería instalar Ubuntu.</p>
+        <p>Nos vamos a la <a href="https://ubuntu.com/download/desktop">pagina web de ubuntu</a> y lo descargamos. (Depende de la velocidad del ordenador y del internet puede variar)</p>
+        <p>Y ya estaría, la parte de descarga de todos los programas e ISOs estaría realizado.</p>
+      <br><!--Eso sirve para hacer un intro en cada linea-->
+    
+  <!--Aqui acaba un paso y empieza el otro-->
+
+      <h2 id="2paso">2º Paso: Instalacion y configuración del programa</h2>
+      <p>Habiendo hecho la primera parte, procederemos a instalar el programa de VirtualBox. Para empezar ejecutamos el programa y seguimos los pasos. Es algo sencillo, donde solo tenemos que darle a siguiente hasta que se instale, lo ejecutamos y nos saldria una pestaña tal que así:</p>
+      <img src="img/01.png" width="1000" height="600"><br><br><!--Esto es para meter la imagen-->
+      <p>Le damos a nueva y seguimos los siguientes pasos (Estos pasos sirven para ambos Sistemas):
+        <ol><!--Esto es para listar con numero los parrafos-->
+          <li>Le damos un nombre a la maquina virtual que será Windows o Ubuntu (depende de la maquina que hagamos) Y luego le metemos la ISO que será la que instalamos antes y automaticamente se pondrá el tipo y la version del sistema y dejamos desmarcada la de omitir desatendida.<br><img src="img/02.png"></li><br>
+          <li>Luego, le damos un nombre de usuario y una contraseña. Otra cosa importante es meterle la clave de producto de Windows 10 y como hemos seleccionado la versión Home le vamos a poner esta clave: TX9XD-98N7V-6WMQ6-BX7FG-H8Q99. El nombre de la maquina y el del dominio lo vamos a dejar como está. <br><img src="img/03.png"></li><br>
+          <li>En este apartado, le vamos a dar los recursos del ordenador, nunca podrá ser más de lo que tu ordenador tiene (que sería el anfitrión) Ya de por si el programa te pone un limitador. En este ordenador como tenemos recursos le vamos a meter 4096MB (4GB) de RAM y 2 nucleos de procesador para que no nos vaya mal el ordenador.<br><img src="img/04.png"></li><br>
+          <li>Aquí le vamos a dar el espacio de disco duro, le vamos a dejar el que nos de por defecto.<br><img src="img/05.png"></li><br>
+          <li>Y para terminar, nos sale un resumen de lo que hemos configurado y ya habriamos hecho todo, para finalizar le damos a <em>Terminar</em> y se iniciará el proceso de instalación<br><img src="img/06.png"></li><br>
+        </ol>
+        Este proceso sería igual para Ubuntu, por lo que no cambia nada.
+      </p>
+      <br>
+
+      <h2 id="3paso">3º Paso: Instalacion y configuración de Windows</h2>
+      <p>Ahora toca esperar a que se instale, como mencione antes, al terminar el proceso de configuración se inicia la instalacion del sistema operativo y windows se hace solo. Nos saldría esta pestaña:</p>
+      <br><img src="img/07.png" width="800" height="650"><br>
+      <p>Tan solo hay que dejarlo que siga la instalación y nos saldría directamente el escritorio de windows y habría que hacer lo siguiente para tener el sistema con los drivers:</p>
+      <video controls><source src="img/08.mp4" type="video/mp4"> Tu navegador no es compatible con este video</video><br>
+      <p>Con esto ya habriamos instalado los drivers de la maquina virtual y podremos cambiarle la resolución, hacerle puentes de red y transferir archivos entre ordenador anfitrion a invitado y viceversa.</p>
+      <p>En principio con windows ya estaría listo para usar, luego lo volveremos a ver para hacer más configuraciones pero por el momento está así bien.</p>
+      <br>
+
+      <h2 id="4paso">4º Paso: Instalacion y configuración de Ubuntu</h2>
+      <p>Tras haber hecho el paso 2, hay cosas que cambian como que no es necesario poner la clave del producto ya que Ubuntu es un software libre, por lo que es gratuito y no es necesario pagar por ello.</p>
+      <p>Tras las instalación tendremos que iniciar sesion en ubuntu con las credenciales que hemos puesto antes y hacemos lo que nos pide en la primera ventana (como recomendación, no inicies sesion con google o cualquier otra cosa, vamos a usar la cuenta simple ya que estamos haciendo pruebas) y si queremos podemos cambiarle el idioma que viene en parte en español y en otra parte en frances. El <a href="https://help.ubuntu.com/stable/ubuntu-help/session-language.html.es" target="_blank">cambio de idioma</a> es sencillo y le dejamos la web oficial de ubuntu con sus pasos a seguir.</p>
+      <p>En este caso, no es necesario instalar las <em>guest additions</em> de VirtualBox ya que Ubuntu tiene un sistema donde no es necesario instalar ningun driver ya que este se adapta a cualquier sistema.</p>
+      <p>Pues ya habriamos terminado y pasariamos al siguiente paso.</p>
+      <br>
+
+      <h2 id="5paso">5º Paso: Configuración de la Red NAT</h2>
+      <p>Para que las maquinas virtuales se hablen entre sí, hay que hacerle la siguiente configuración que está en el siguiente vídeo.</p>
+      <video controls><source src="img/09.mp4" type="video/mp4"> Tu navegador no es compatible con este video</video><br>
+      <p>Configuramos la Red NAT tal y como lo hemos hecho en el video. Podriamos cambiarle el nombre a otro y el prefijo ipv4, pero no es recomendable ya que podriamos tener problemas.</p>
+      <p>Ahora vamos a hacerle un ping entre ellas y tenemos que saber que direccion ip tiene cada una por lo que habrimos el cmd (en el caso de Windows) y el terminal (en el caso de Ubuntu).</p><br>
+      <img src="img/10.png" width="900"height="400"><br>
+      <p>En este caso, que es windows, le ponemos el comando en el simbolo del sistema <em>ipconfig</em> y nos da la siguiente dirección ip.</p><br>
+      <img src="img/11.png" width="700"><br>
+      <p>En este caso, que es ubuntu, le ponemos en el terminal <em>ip a</em> y nos da su direccion ip. </p><br>
+      <p>Ahora le hacemos ping entre una y la otra. Lo haremos de la siguiente manera.</p>
+      <img src="img/12.png" width="700"><br>
+      <p>Aqui vemos como Ubuntu establece la conexión con Windows y es satisfactoria.</p><br>
+      <img src="img/13.png" width="700"><br>
+      <p>Aqui vemos como Windows establece la conexión con Ubuntu y es satisfactoria.</p><br>
+      <p>Con este apartado ya habremos terminado, pasamos al siguiente.</p>
+      <br>
+
+      <h2 id="6paso">6º Paso: Instalación de SAMBA</h2>
+      <p>Este proceso solo sería para Ubuntu para que se conecten con los equipos de Windows.</p>
+      <p>Aquí podrá ver un video donde se explica todo y abajo los comandos a seguir.</p>
+      <video controls><source src="img/14.mp4" type="video/mp4">Tu navegador no es compatible con este vídeo.</video><br>
+      <p>Los metodos son sencillos, pero si te pierdes en alguno puede que no te llegue a funcionar, por lo que hay que hacerlo todo de esta manera y en este orden.</p>
+      <br><br>
+
+      <h2>Final</h2>
+      <p>Bueno, pues hasta aquí estaría el how-to. Ha sido algo sencillo pero muy inmenso en el sentido de pasos a realizar y comandos que escribir para que todo salga bien.</p>
+      <p>Espero que haya servido de ayuda, para cualquier duda no dudes en ponerte en contacto conmigo: <a href="mailto:josan10072005@alumnos.alborfp.com">josan10072005@alumnos.alborfp.com</a></p>
+
+    </section>
+  
+  </main>
+
+  <footer>
+    <p> Copyright 2024 &#174; Todos los derechos reservados - José Antonio Sánchez Pérez 1ºDAW</p>
+  </footer>
+  <!--Esto es para meter el footer que normalmente se usa para las paginas web-->
+</body>
+</html>
